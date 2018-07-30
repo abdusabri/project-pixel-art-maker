@@ -12,6 +12,9 @@ btnSubmit.addEventListener('click', function (e) {
     makeGrid();
 });
 
+// grid click event
+pixelCanvas.addEventListener ('click', colorGridCell);
+
 function makeGrid() {
     // clear privous grid before drawing the new one
     clearGrid();
@@ -36,5 +39,11 @@ function makeGrid() {
 function clearGrid() {
     while (pixelCanvas.hasChildNodes()) {   
         pixelCanvas.removeChild(pixelCanvas.firstChild);
+    }
+}
+
+function colorGridCell(event) {
+    if (event.target.tagName == "TD") {
+        event.target.style.backgroundColor = colorPicker.value;
     }
 }
