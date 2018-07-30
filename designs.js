@@ -1,10 +1,12 @@
-// Select color input
-// Select size input
+// element constants
+const inputHeight = document.getElementById('inputHeight');
+const inputWidth = document.getElementById('inputWidth');
+const btnSubmit = document.querySelector('input[type=submit]');
+const colorPicker = document.getElementById('colorPicker');
+const pixelCanvas = document.getElementById('pixelCanvas');
 
-// When size is submitted by the user, call makeGrid()
+
 
 function makeGrid() {
-
-// Your code goes here!
 
 }
